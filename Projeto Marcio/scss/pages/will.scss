@@ -1,0 +1,52 @@
+@use '../abstracks/reset';
+@use '../abstracks/colors';
+@use '../abstracks/fonts';
+
+* {
+  font-family: fonts.$roboto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(https://wallpapercave.com/wp/wp6263178.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+main {
+  padding: 2.4rem;
+
+  nav {
+    img {
+      width: 14rem;
+    }
+  }
+
+  .content {
+    padding: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      margin-left: 4rem;
+      text-align: center;
+      width: 20rem;
+      color: colors.$personagem;
+      font-size: 8rem;
+      font-weight: 500;
+    }
+
+    p {
+      text-align: center;
+      width: 40rem;
+      display: flex;
+      color: whitesmoke;
+      font-size: 2rem;
+      font-weight: 300;
+    }
+  }
+}

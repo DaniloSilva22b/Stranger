@@ -1,0 +1,490 @@
+@use '../abstracks/reset';
+@use '../abstracks/colors';
+@use '../abstracks/fonts';
+
+* {
+  font-family: fonts.$helvetica;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  background: colors.$fundo;
+}
+
+header {
+  padding: 1.2rem 5rem;
+  width: 100%;
+  height: 7rem;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: colors.$fundo;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 9rem;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+          list-style: none;
+          font-size: 2.2rem;
+          font-weight: 300;
+          margin: 0 2rem;
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem;
+  background-image: url(/images/fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+
+  figure {
+    width: 45rem;
+    margin-bottom: 5rem;
+  }
+
+  .initial {
+    h1 {
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+      font-size: 2.4rem;
+      color: white;
+      line-height: 3rem;
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 2rem;
+      color: colors.$strong;
+      font-size: 1.5em;
+      line-height: 1.8rem;
+      font-weight: 400;
+      letter-spacing: 0.3rem;
+    }
+    strong {
+      border: 0.1rem colors.$strong solid;
+      padding: 0.4rem 0.4rem;
+    }
+  }
+
+  .serial_content {
+    #text {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      font-weight: 400;
+      color: #fff;
+      width: 50rem;
+    }
+
+    #space {
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      font-weight: 400;
+      color: #fff;
+      max-width: 100%;
+    }
+
+    strong {
+      color: colors.$strong;
+    }
+  }
+}
+
+.roteiro{
+  padding: 2.4rem;
+
+
+  & > h1{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    color: white;
+
+    strong{
+      color: colors.$strong;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.2rem;
+    }
+  }
+
+  .cima{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+
+    .cima_left{
+      position: relative;
+      background: rgb(228, 228, 228);
+      border-radius: 2rem;
+
+      img{
+        border-radius: 2rem 2rem 0 0;
+      }
+      h1{
+        color: colors.$personagem;
+        font-weight: 600;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 5rem;
+        padding: 2rem 3rem;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin-bottom: 12rem;
+      }
+      p{
+        padding: 2rem;
+        font-weight: 500;
+        color:black;
+        font-size: 1.5rem;
+        width: 70rem;
+      }
+    }
+
+    .cima_right{
+      position: relative;
+      background: rgb(228, 228, 228);
+      border-radius: 2rem;
+      img{
+        border-radius: 2rem 2rem 0 0;
+      }
+      h1{
+        color:  colors.$personagem;
+        font-weight: 600;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 5rem;
+        padding: 2rem 3rem;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin-bottom: 12rem;
+      }
+      p{
+        margin-top: 0.1rem;
+        font-weight: 500;
+        padding: 2rem;
+        color:black;
+        font-size: 1.5rem;
+        width: 70rem;
+      }
+    }
+  }
+
+  .baixo{
+    display: flex;
+    justify-content: space-between;
+
+    .baixo_left{
+      position: relative;
+      background: rgb(228, 228, 228);
+      border-radius: 2rem;
+
+      img{
+        border-radius: 2rem 2rem 0 0;
+      }
+      h1{
+        color: colors.$personagem;
+        font-weight: 600;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 5rem;
+        padding: 2rem 3rem;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin-bottom: 13rem;
+      }
+      p{
+        padding: 2rem;
+        font-weight: 500;
+        color:black;
+        font-size: 1.5rem;
+        width: 70rem;
+      }
+    }
+
+    .baixo_right{
+      position: relative;
+      background: rgb(228, 228, 228);
+      border-radius: 2rem;
+      img{
+        border-radius: 2rem 2rem 0 0;
+      }
+      h1{
+        color: colors.$personagem;
+        font-weight: 600;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 5rem;
+        padding: 2rem 3rem;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin-bottom: 13rem;
+      }
+      p{
+        margin-top: 0.5rem;
+        font-weight: 500;
+        padding: 2rem;
+        color:black;
+        font-size: 1.5rem;
+        width: 70rem;
+      }
+    }
+  }
+}
+
+.personagens{
+  padding: 2.4rem;
+  & > h1{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    color: white;
+  }
+
+  img{
+    border-radius: 2rem;
+    opacity: 0.6;
+  }
+
+  .personagenscima{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    .mike{
+      position: relative;
+
+      h1{
+        font-size: 3rem;
+        padding: 1.8rem;
+        margin-bottom: 2.5rem;
+        color: colors.$personagem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-weight: 600;
+      }
+      p{
+        font-size: 2rem;
+        padding: 1.8rem;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    .mike:hover{
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .eleven{
+      position: relative;
+
+      h1{
+        font-size: 3rem;
+        padding: 1.8rem;
+        margin-bottom: 2.5rem;
+        color: colors.$personagem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-weight: 600;
+      }
+      p{
+        font-size: 2rem;
+        padding: 1.8rem;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    .eleven:hover{
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .will{
+      position: relative;
+
+      h1{
+        font-size: 3rem;
+        padding: 1.8rem;
+        margin-bottom: 2.5rem;
+        color: colors.$personagem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-weight: 600;
+      }
+      p{
+        font-size: 2rem;
+        padding: 1.8rem;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    .will:hover{
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+  .personagensbaixo{
+    display: flex;
+    justify-content: space-between;
+
+    .dustin{
+      position: relative;
+
+      h1{
+        font-size: 3rem;
+        padding: 1.8rem;
+        margin-bottom: 2.5rem;
+        color: colors.$personagem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-weight: 600;
+      }
+      p{
+        font-size: 2rem;
+        padding: 1.8rem;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    .dustin:hover{
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .lucas{
+      position: relative;
+
+      h1{
+        font-size: 3rem;
+        padding: 1.8rem;
+        margin-bottom: 2.5rem;
+        color: colors.$personagem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-weight: 600;
+      }
+      p{
+        font-size: 2rem;
+        padding: 1.8rem;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    .lucas:hover{
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .max{
+      position: relative;
+
+      h1{
+        font-size: 3rem;
+        padding: 1.8rem;
+        margin-bottom: 2.5rem;
+        color: colors.$personagem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-weight: 600;
+      }
+      p{
+        font-size: 2rem;
+        padding: 1.8rem;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    .max:hover{
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+}
+
+.sinopse{
+  padding: 2.4rem;
+
+  & > h1{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    color: white;
+  }
+
+  .information{
+    text-align: center;
+    color: colors.$strong;
+    font-size: 1.8rem;
+    font-weight: 400;
+    opacity: 0.4;
+
+    p{
+      margin-bottom: 2rem;
+    }
+  }
+}

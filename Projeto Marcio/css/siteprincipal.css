@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding and reset fonts */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  background: #130D29;
+}
+
+header {
+  padding: 1.2rem 5rem;
+  width: 100%;
+  height: 7rem;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: #130D29;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+}
+header .header img {
+  width: 9rem;
+}
+header .header nav {
+  display: flex;
+  align-items: center;
+}
+header .header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header .header nav ul li {
+  list-style: none;
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin: 0 2rem;
+}
+header .header nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem;
+  background-image: url(/images/fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+}
+.principal figure {
+  width: 45rem;
+  margin-bottom: 5rem;
+}
+.principal .initial h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  color: white;
+  line-height: 3rem;
+  font-weight: 700;
+}
+.principal .initial p {
+  margin-bottom: 2rem;
+  color: #a3a3a3;
+  font-size: 1.5em;
+  line-height: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}
+.principal .initial strong {
+  border: 0.1rem #a3a3a3 solid;
+  padding: 0.4rem 0.4rem;
+}
+.principal .serial_content #text {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  color: #fff;
+  width: 50rem;
+}
+.principal .serial_content #space {
+  margin-top: 2rem;
+}
+.principal .serial_content p {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  color: #fff;
+  max-width: 100%;
+}
+.principal .serial_content strong {
+  color: #a3a3a3;
+}
+
+.roteiro {
+  padding: 2.4rem;
+}
+.roteiro > h1 {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  color: white;
+}
+.roteiro > h1 strong {
+  color: #a3a3a3;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+.roteiro .cima {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.roteiro .cima .cima_left {
+  position: relative;
+  background: rgb(228, 228, 228);
+  border-radius: 2rem;
+}
+.roteiro .cima .cima_left img {
+  border-radius: 2rem 2rem 0 0;
+}
+.roteiro .cima .cima_left h1 {
+  color: #ED1C24;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 5rem;
+  padding: 2rem 3rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-bottom: 12rem;
+}
+.roteiro .cima .cima_left p {
+  padding: 2rem;
+  font-weight: 500;
+  color: black;
+  font-size: 1.5rem;
+  width: 70rem;
+}
+.roteiro .cima .cima_right {
+  position: relative;
+  background: rgb(228, 228, 228);
+  border-radius: 2rem;
+}
+.roteiro .cima .cima_right img {
+  border-radius: 2rem 2rem 0 0;
+}
+.roteiro .cima .cima_right h1 {
+  color: #ED1C24;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 5rem;
+  padding: 2rem 3rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-bottom: 12rem;
+}
+.roteiro .cima .cima_right p {
+  margin-top: 0.1rem;
+  font-weight: 500;
+  padding: 2rem;
+  color: black;
+  font-size: 1.5rem;
+  width: 70rem;
+}
+.roteiro .baixo {
+  display: flex;
+  justify-content: space-between;
+}
+.roteiro .baixo .baixo_left {
+  position: relative;
+  background: rgb(228, 228, 228);
+  border-radius: 2rem;
+}
+.roteiro .baixo .baixo_left img {
+  border-radius: 2rem 2rem 0 0;
+}
+.roteiro .baixo .baixo_left h1 {
+  color: #ED1C24;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 5rem;
+  padding: 2rem 3rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-bottom: 13rem;
+}
+.roteiro .baixo .baixo_left p {
+  padding: 2rem;
+  font-weight: 500;
+  color: black;
+  font-size: 1.5rem;
+  width: 70rem;
+}
+.roteiro .baixo .baixo_right {
+  position: relative;
+  background: rgb(228, 228, 228);
+  border-radius: 2rem;
+}
+.roteiro .baixo .baixo_right img {
+  border-radius: 2rem 2rem 0 0;
+}
+.roteiro .baixo .baixo_right h1 {
+  color: #ED1C24;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 5rem;
+  padding: 2rem 3rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-bottom: 13rem;
+}
+.roteiro .baixo .baixo_right p {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  padding: 2rem;
+  color: black;
+  font-size: 1.5rem;
+  width: 70rem;
+}
+
+.personagens {
+  padding: 2.4rem;
+}
+.personagens > h1 {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  color: white;
+}
+.personagens img {
+  border-radius: 2rem;
+  opacity: 0.6;
+}
+.personagens .personagenscima {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.personagens .personagenscima .mike {
+  position: relative;
+}
+.personagens .personagenscima .mike h1 {
+  font-size: 3rem;
+  padding: 1.8rem;
+  margin-bottom: 2.5rem;
+  color: #ED1C24;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+}
+.personagens .personagenscima .mike p {
+  font-size: 2rem;
+  padding: 1.8rem;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.personagens .personagenscima .mike:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.personagens .personagenscima .eleven {
+  position: relative;
+}
+.personagens .personagenscima .eleven h1 {
+  font-size: 3rem;
+  padding: 1.8rem;
+  margin-bottom: 2.5rem;
+  color: #ED1C24;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+}
+.personagens .personagenscima .eleven p {
+  font-size: 2rem;
+  padding: 1.8rem;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.personagens .personagenscima .eleven:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.personagens .personagenscima .will {
+  position: relative;
+}
+.personagens .personagenscima .will h1 {
+  font-size: 3rem;
+  padding: 1.8rem;
+  margin-bottom: 2.5rem;
+  color: #ED1C24;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+}
+.personagens .personagenscima .will p {
+  font-size: 2rem;
+  padding: 1.8rem;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.personagens .personagenscima .will:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.personagens .personagensbaixo {
+  display: flex;
+  justify-content: space-between;
+}
+.personagens .personagensbaixo .dustin {
+  position: relative;
+}
+.personagens .personagensbaixo .dustin h1 {
+  font-size: 3rem;
+  padding: 1.8rem;
+  margin-bottom: 2.5rem;
+  color: #ED1C24;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+}
+.personagens .personagensbaixo .dustin p {
+  font-size: 2rem;
+  padding: 1.8rem;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.personagens .personagensbaixo .dustin:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.personagens .personagensbaixo .lucas {
+  position: relative;
+}
+.personagens .personagensbaixo .lucas h1 {
+  font-size: 3rem;
+  padding: 1.8rem;
+  margin-bottom: 2.5rem;
+  color: #ED1C24;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+}
+.personagens .personagensbaixo .lucas p {
+  font-size: 2rem;
+  padding: 1.8rem;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.personagens .personagensbaixo .lucas:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.personagens .personagensbaixo .max {
+  position: relative;
+}
+.personagens .personagensbaixo .max h1 {
+  font-size: 3rem;
+  padding: 1.8rem;
+  margin-bottom: 2.5rem;
+  color: #ED1C24;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+}
+.personagens .personagensbaixo .max p {
+  font-size: 2rem;
+  padding: 1.8rem;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.personagens .personagensbaixo .max:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.sinopse {
+  padding: 2.4rem;
+}
+.sinopse > h1 {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  color: white;
+}
+.sinopse .information {
+  text-align: center;
+  color: #a3a3a3;
+  font-size: 1.8rem;
+  font-weight: 400;
+  opacity: 0.4;
+}
+.sinopse .information p {
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=siteprincipal.css.map */
